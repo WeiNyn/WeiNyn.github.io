@@ -1,0 +1,120 @@
+body{
+    background-color: #F5E9E9;
+    font-family: Poppins;
+    font-weight: 600;
+    padding: 0 15%;
+}
+
+nav {
+    background-color: #FFE7DA;
+    box-shadow: 0px 6px 24px rgba(38, 43, 57, 0.16), 0px 2px 12px rgba(38, 43, 57, 0.12); 
+    border-radius: 20px;
+    width: fit-content;
+    margin-top: 64px;
+    position: fixed;
+    z-index: 1000;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 12px;
+}
+
+.nav-list li {
+    align-items: center;
+    display: flex;
+    width: fit-content;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #384357;
+    font-size: 18px;
+    padding: 16px 12px;
+    display: block;
+    font-weight: 500;
+}
+
+.nav-list a:hover {
+    background-color: #384357;
+    color: #F5E9E9;
+    border-radius: 8px;
+}
+
+.y-box{
+    display: flex;
+    flex-direction: column;
+    width: fill;
+}
+
+.heading{
+    font-size: 72px;
+}
+
+.heading1{
+    font-size: 56px;
+}
+
+.heading2{
+    font-size: 40px;
+}
+.y-box25{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.y-box60{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.y-box40{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.y-box75{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    column-gap: 10px;
+}
+
+.x-box25{
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+}
+
+.x-box75{
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+}
+
+.x-box{
+    display: flex;
+    gap: 5%;
+}
+
+.text-box{
+    font-size: 20px;
+}
+
+.avatar{
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .text-box{
+        font-size: 10px;
+    }
+    .x-box{ flex-direction: column; justify-content: center; justify-items: center;}
+    .y-box75{ flex-direction: row; width: 80%; justify-content: center; justify-items: center; justify-content: center; justify-items: center;}
+    .y-box25{ flex-direction: row; width: 100%; align-items: center; justify-content: center; justify-items: center;}
+    .avatar{width: 30%;}
+}
